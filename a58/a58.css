@@ -1,0 +1,182 @@
+/* ------test tow */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(59, 59, 59);
+}
+
+
+.testOne {
+    width: 80%;
+    height: 400px;
+    background-color: rgb(176, 176, 176);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: aqua;
+    display: block;
+    height: 300px;
+    width: 400px;
+}
+
+a {
+    display: block;
+    background-color: red;
+    height: 25%;
+    text-decoration: none;
+}
+
+span {
+    display: block;
+    width: 2%;
+    background-color: green;
+    height: 100%;
+    transition: 1s;
+    padding-top: 1rem;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+a:hover span {
+    width: 100%;
+}
+
+a:nth-child(1) span {
+    background-color: black;
+}
+
+a:nth-child(2) span {
+    background-color: rgb(182, 6, 6);
+}
+
+a:nth-child(3) span {
+    background-color: rgb(0, 82, 246);
+}
+
+a:nth-child(4) span {
+    background-color: rgb(0, 255, 13);
+}
+
+/*<-----section-----> */
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 40vh;
+    background-color: rgb(66, 64, 64);
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.main{
+    /* display: table-cell; */
+    font-size: 5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    animation: 2s imad linear infinite;
+
+}
+
+@keyframes imad {
+    0%, 30%{
+        color: rgb(255, 255, 255);
+        text-shadow:
+            0 0 10px rgb(0, 255, 17),
+            0 0 50px rgb(0, 255, 17),
+            0 0 100px rgb(0, 255, 17);
+    }
+    40%, 90% {
+        color: #000000;
+        text-shadow: none;
+    }
+}
+
+.main:nth-child(1) {
+    animation-delay: 0.25s;
+}
+
+.main:nth-child(2) {
+    animation-delay: 0.5s;
+    
+}
+
+.main:nth-child(3) {
+    animation-delay: 0.75s;
+}
+
+.main:nth-child(4) {
+    animation-delay: 1.20s;
+}
+
+.main>h3:nth-child(5) {
+    animation-delay: 1.75s;
+}
+
+/* --------------Alisawi--------------- */
+
+.mainTow{
+    width: 80%;
+    height: 40vh;
+    color: #ffff;
+    font-size: 3rem;
+    margin: 0 auto;
+    background-color: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.mainTow div{
+    animation: Ali 2s ease-in infinite;
+    padding:0 1rem;
+    text-transform: uppercase;
+}
+
+
+@keyframes  Ali{
+    0%{
+        color: hsl(58, 100%, 50%);
+        text-shadow:
+        0 0px 20px #6ea809,
+        0 0px 50px #98e710,
+        0 0px 90px #a4ec08;
+    }
+    30%, 90%{
+        color: #ad0707;
+        text-shadow:
+        0 0px 20px #c4ff02,
+        0 0px 30px #a3e710,
+        0 0px 40px #d1f40b;
+    }
+}
+.mainTow div:nth-child(1){
+    animation-delay: 0s;
+}
+.mainTow div:nth-child(2){
+    animation-delay: 0.25s;
+}
+.mainTow div:nth-child(3){
+    animation-delay: 0.75s;
+}
+.mainTow div:nth-child(4){
+    animation-delay: 1s;
+}
+.mainTow div:nth-child(5){
+    animation-delay: 1.15s;
+}
+.mainTow div:nth-child(6){
+    animation-delay: 1.50s;
+}
+.mainTow div:nth-child(7){
+    animation-delay: 1.80s;
+}
